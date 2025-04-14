@@ -19,8 +19,6 @@ class ContractService {
   }
 
   async getAllContractsForProfile(profileId) {
-    console.log("hey IM gere")
-    console.log(ContractStatus.TERMINATED)
     return this.Contract.findAll({
         where: {
             [Op.or]: [
